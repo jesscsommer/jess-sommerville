@@ -3,3 +3,18 @@
     font-weight: 500;
     font-size: 2.5rem;
 }
+
+.container {
+    display: flex;
+}
+
+.image {
+    object-fit: contain;
+    width: 30%;
+    margin-left: 10%;
+    
+}
+
+.body {
+    width: 50%;
+}
