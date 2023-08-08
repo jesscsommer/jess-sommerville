@@ -16,6 +16,21 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `stories`,
+        path: `${__dirname}/stories`,
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+            `gatsby-remark-line-breaks`
+        ]
+      }
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp", 
     {
