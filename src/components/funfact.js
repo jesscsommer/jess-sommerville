@@ -4,7 +4,7 @@ import "../styles/global.css";
 
 const FunFact = () => {
     const data = useStaticQuery(graphql`
-        query MyQuery {
+        query FunFacts {
             allFactsYaml {
             edges {
                 node {

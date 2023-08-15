@@ -7,6 +7,7 @@ import Seo from '../components/seo'
 import Writing from '../components/writing'
 import FunFact from '../components/funfact'
 import Contact from "../components/contact"
+import Link from '../components/link'
 
 const IndexPage = () => {
 
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <Writing />
       <FunFact />
       <Contact />
+      <Link />
     </Layout>
   )
 }
