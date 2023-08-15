@@ -6,6 +6,7 @@ import Project from '../components/project'
 import Seo from '../components/seo'
 
 const IndexPage = () => {
+
   return (
     <Layout>
       <Home /> 
@@ -16,5 +17,6 @@ const IndexPage = () => {
 }
 
 export const Head = () => <Seo title="Home Page" />
+
 
 export default IndexPage
