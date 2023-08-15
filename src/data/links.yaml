@@ -1,0 +1,11 @@
+- name: LinkedIn
+  alt: "LinkedIn logo"
+  link: "https://www.linkedin.com/in/jess-c-sommerville/"
+
+- name: Medium
+  alt: "Medium logo"
+  link: "https://medium.com/@jesscsommer"
+
+- name: Github 
+  alt: "Github logo"
+  link: "github.com/jesscsommer"
