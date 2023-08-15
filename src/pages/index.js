@@ -5,6 +5,7 @@ import Story from '../components/story'
 import Project from '../components/project'
 import Seo from '../components/seo'
 import Writing from '../components/writing'
+import FunFact from '../components/funfact'
 
 const IndexPage = () => {
 
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <Story />
       <Project />
       <Writing />
+      <FunFact />
     </Layout>
   )
 }

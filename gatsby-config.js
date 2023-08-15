@@ -24,12 +24,26 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `stories`,
+        path: `${__dirname}/stories`,
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
             `gatsby-remark-line-breaks`
         ]
       }
+    },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp", 
