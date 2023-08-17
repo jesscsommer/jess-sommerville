@@ -3,3 +3,36 @@
     font-weight: 500;
     font-size: 2.5rem;
 }
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+}
+
+.card {
+    background-color: pink;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 12px;
+    max-width: 30%;
+    margin-right: 2%;
+}
+
+.tag {
+    padding: 4px 8px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: orange;
+}
+
+.cardImage {
+    width: 100%;
+    border-radius: 12px;
+    height: 215px;
+    object-fit: cover;
+}

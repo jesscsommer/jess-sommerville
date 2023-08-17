@@ -36,17 +36,21 @@ const Project = () => {
     return (
         <div>
             <header className="title">projects</header>
+            <div className="container">
 
             {data.allMdx.nodes.map(node => 
-            <div key={node.id}>
-                <p>{node.frontmatter.title}</p>
-                <GatsbyImage 
-                    image={getImage(node.frontmatter.hero_image)}
-                    alt={node.frontmatter.hero_image_alt}
-                />
-                <p>{node.body}</p>
-            </div>)}
+                <div className="card" key={node.id}>
+                    <p>{node.frontmatter.title}</p>
+                    <GatsbyImage 
+                        image={getImage(node.frontmatter.hero_image)}
+                        alt={node.frontmatter.hero_image_alt}
+                        className="cardImage"
+                    />
+                    <p>{node.body}</p>
+                    <p className="tag">Test tag</p>
+                </div>)}
 
+            </div>
         </div>
     )
 }

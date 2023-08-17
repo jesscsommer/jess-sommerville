@@ -32,12 +32,17 @@ const Link = () => {
     return (
         <div>
             <header className="title">links</header>
-            {data.allLinksYaml.edges.map(edge => 
-                <div key={edge.node.id} className={blue}>
-                    <p>{edge.node.name}</p>
-                    <GatsbyImage image={getImage(data.allFile.edges.filter(file => file.node.name === edge.node.name)[0].node.childImageSharp)} alt={edge.node.alt} />
-                </div>
-            )}
+            <div className="container">
+                {data.allLinksYaml.edges.map(edge => 
+                    <div key={edge.node.id} className="card">
+                        <p>{edge.node.name}</p>
+                        <GatsbyImage 
+                            className="cardImage"
+                            image={getImage(data.allFile.edges.filter(file => file.node.name === edge.node.name)[0].node.childImageSharp)} alt={edge.node.alt} />
+                    </div>
+                )}
+
+            </div>
         </div>
     )
 }
