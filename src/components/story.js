@@ -19,7 +19,7 @@ const Story = () => {
                 </div>
                 <StaticImage 
                     alt="A photo of me will go here"
-                    src="../images/placeholder_image.jpg"
+                    src="../images/columbiarivergorge.JPG"
                     className={image}
                 />
             </div>
