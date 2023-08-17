@@ -19,6 +19,7 @@ const Project = () => {
                         hero_image_alt
                         slug
                         title
+                        tags
                     }
                     id
                     body
@@ -47,7 +48,7 @@ const Project = () => {
                         className="cardImage"
                     />
                     <p>{node.body}</p>
-                    <p className="tag">Test tag</p>
+                    <p className="tag">{node.frontmatter.tags[0]}</p>
                 </div>)}
 
             </div>
