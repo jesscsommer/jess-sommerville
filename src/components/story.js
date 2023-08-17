@@ -12,7 +12,7 @@ const Story = () => {
 
     return (
         <>
-            <header className={title}>my story</header>
+            <header id="story" className={title}>my story</header>
             <div className={container}>
                 <div className={body}>
                     <StoryText />
