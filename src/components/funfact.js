@@ -1,6 +1,10 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import "../styles/global.css";
+import { 
+    body
+} from "./funfact.module.css"
+
 
 const FunFact = () => {
     const data = useStaticQuery(graphql`
@@ -22,7 +26,7 @@ const FunFact = () => {
         <div>
             <header className="title">get to know me</header>
             {data.allFactsYaml.edges.map(edge => 
-                <div key={edge.node.id}>
+                <div className={body} key={edge.node.id}>
                     <p>{edge.node.question}</p>
                     <p>{edge.node.answer}</p>
                 </div>

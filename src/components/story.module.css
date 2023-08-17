@@ -2,6 +2,7 @@
     font-family: "Syne";
     font-weight: 500;
     font-size: 2.5rem;
+    color: white;
 }
 
 .container {
@@ -17,4 +18,5 @@
 
 .body {
     width: 50%;
+    color: white;
 }

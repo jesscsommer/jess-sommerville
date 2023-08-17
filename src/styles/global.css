@@ -2,6 +2,7 @@
     font-family: "Syne";
     font-weight: 500;
     font-size: 2.5rem;
+    color: white;
 }
 
 .container {
@@ -35,4 +36,12 @@
     border-radius: 12px;
     height: 215px;
     object-fit: cover;
+}
+
+.app {
+    background-color: black;
+}
+
+body {
+    background-color: black;
 }

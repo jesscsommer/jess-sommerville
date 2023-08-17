@@ -2,19 +2,19 @@
     font-family: "Syne";
     font-weight: 700;
     font-size: 5rem;
-    color: black; 
+    color: white; 
 }
 
 .detail-text {
     font-family: "Inter";
     font-weight: 400;
     font-size: 1.25rem;
-    color: black;
+    color: white;
 }
 
 .nav-link {
     font-family: "Inter";
     font-weight: 700;
-    color: black;
+    color: white;
     text-decoration: underline;
 }
