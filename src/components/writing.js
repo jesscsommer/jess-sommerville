@@ -37,15 +37,18 @@ const Writing = () => {
         <div>
             <header className="title">writings</header>
 
-            {data.allMdx.nodes.map(node => 
-            <div key={node.id}>
-                <p>{node.frontmatter.title}</p>
-                <GatsbyImage 
-                    image={getImage(node.frontmatter.hero_image)}
-                    alt={node.frontmatter.hero_image_alt}
-                />
-                <p>{node.body}</p>
-            </div>)}
+            <div className="container">
+                {data.allMdx.nodes.map(node => 
+                    <div className="card" key={node.id}>
+                        <p>{node.frontmatter.title}</p>
+                        <GatsbyImage 
+                            image={getImage(node.frontmatter.hero_image)}
+                            alt={node.frontmatter.hero_image_alt}
+                            className="cardImage"
+                        />
+                        <p>{node.body}</p>
+                </div>)}
+            </div>
 
         </div>
     )
