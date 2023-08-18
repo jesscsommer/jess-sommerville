@@ -8,7 +8,7 @@ import HaikuText from "../../projects/haikuhaven/index.mdx"
 const Project = () => {
     const data = useStaticQuery(graphql`
         query {
-            allMdx(filter: {internal: {contentFilePath: {regex: "/projects/"}}}){
+            allMdx(sort: {frontmatter: {order: ASC}}, filter: {internal: {contentFilePath: {regex: "/projects/"}}}){
                 nodes {
                     frontmatter {
                         hero_image {

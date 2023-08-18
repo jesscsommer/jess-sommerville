@@ -6,13 +6,14 @@ import {
     image, 
     container 
 } from "./story.module.css"
+import "../styles/global.css"
 import { StaticImage } from "gatsby-plugin-image";
 
 const Story = () => {
 
     return (
         <>
-            <header id="story" className={title}>my story</header>
+            <header id="story" className="title">my story</header>
             <div className={container}>
                 <div className={body}>
                     <StoryText />
