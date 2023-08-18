@@ -4,7 +4,7 @@ import "../styles/global.css";
 const Contact = () => {
     return (
         <div>
-            <p>contact me</p>
+            <p className="subtitle">contact me</p>
             <header className="title">jessica.c.sommerville@gmail.com</header>
         </div>
     )

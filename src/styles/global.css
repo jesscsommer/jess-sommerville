@@ -45,3 +45,13 @@
 body {
     background-color: black;
 }
+
+.subtitle {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: white;
+    margin: auto;
+    display: block;
+    text-align: left;
+}
