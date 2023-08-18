@@ -1,3 +1,15 @@
-.blue {
-    background-color: lightblue;
+.link-container {
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.link-item {
+    max-width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.link-icon {
+    width: 100%;
+    object-fit: contain;
 }

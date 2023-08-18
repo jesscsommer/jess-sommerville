@@ -1,0 +1,7 @@
+.contact-container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
+}

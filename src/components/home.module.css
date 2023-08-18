@@ -1,20 +1,41 @@
+.container {
+    margin-top: 25%;
+    margin-bottom: 25%;
+    display: inline-block;
+}
+
 .main-text {
     font-family: "Syne";
     font-weight: 700;
     font-size: 5rem;
-    color: black; 
+    color: white; 
 }
 
 .detail-text {
     font-family: "Inter";
     font-weight: 400;
     font-size: 1.25rem;
-    color: black;
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.my-name {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: white;
+    margin: auto;
+    display: block;
+    text-align: left;
 }
 
 .nav-link {
     font-family: "Inter";
     font-weight: 700;
-    color: black;
+    color: white;
     text-decoration: underline;
+    display: block;
+    text-align: center; 
+    font-size: 1.25rem;
 }

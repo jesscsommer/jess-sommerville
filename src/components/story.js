@@ -12,14 +12,14 @@ const Story = () => {
 
     return (
         <>
-            <header className={title}>my story</header>
+            <header id="story" className={title}>my story</header>
             <div className={container}>
                 <div className={body}>
                     <StoryText />
                 </div>
                 <StaticImage 
                     alt="A photo of me will go here"
-                    src="../images/placeholder_image.jpg"
+                    src="../images/columbiarivergorge.JPG"
                     className={image}
                 />
             </div>
