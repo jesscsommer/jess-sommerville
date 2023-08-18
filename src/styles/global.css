@@ -14,26 +14,32 @@
 }
 
 .card {
-    background-color: pink;
-    border: 1px solid black;
     padding: 8px;
-    border-radius: 12px;
+    border-radius: 5px;
     max-width: 30%;
-    margin-right: 2%;
+    margin-right: 5%;
+}
+
+.tag-container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tag {
     padding: 4px 8px;
-    border: 1px solid black;
-    border-radius: 50px;
-    font-size: 12px;
+    border-radius: 15px;
+    font-size: 14px;
     font-weight: 600;
-    color: orange;
+    color: black;
+    background-color: white;
+    margin-right: 3%;
+    margin-top: 0;
 }
 
 .cardImage {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 5px;
     height: 215px;
     object-fit: cover;
 }
@@ -44,6 +50,7 @@
 
 body {
     background-color: black;
+    color: white;
 }
 
 .subtitle {
