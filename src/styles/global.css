@@ -25,6 +25,7 @@
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    opacity: 87%;
 }
 
 .tag {
@@ -38,6 +39,7 @@
     color: white;
     margin-right: 3%;
     margin-top: 0;
+    opacity: 87%;
 }
 
 .cardImage {
@@ -52,7 +54,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #121212;
     color: white;
 }
 
