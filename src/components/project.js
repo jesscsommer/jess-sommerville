@@ -2,13 +2,17 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import "../styles/global.css"
-import { image } from "./project.module.css"
-import HaikuText from "../../projects/haikuhaven/index.mdx"
+import { 
+    githubButton,
+    demoButton,
+    siteButton
+} from "./project.module.css"
+
 
 const Project = () => {
     const data = useStaticQuery(graphql`
         query {
-            allMdx(filter: {internal: {contentFilePath: {regex: "/projects/"}}}){
+            allMdx(sort: {frontmatter: {order: ASC}}, filter: {internal: {contentFilePath: {regex: "/projects/"}}}){
                 nodes {
                     frontmatter {
                         hero_image {
@@ -20,6 +24,9 @@ const Project = () => {
                         slug
                         title
                         tags
+                        demo
+                        github
+                        website
                     }
                     id
                     body
@@ -41,14 +48,22 @@ const Project = () => {
 
             {data.allMdx.nodes.map(node => 
                 <div className="card" key={node.id}>
-                    <p>{node.frontmatter.title}</p>
+                    {/* <p>{node.frontmatter.title}</p> */}
                     <GatsbyImage 
                         image={getImage(node.frontmatter.hero_image)}
                         alt={node.frontmatter.hero_image_alt}
                         className="cardImage"
                     />
                     <p>{node.body}</p>
-                    <p className="tag">{node.frontmatter.tags[0]}</p>
+                    <div className="tag-container"> 
+                        {node.frontmatter.tags.map(tag => 
+                            <p id={tag} className="tag">{tag}</p>)}
+                    </div>
+                    <div className="tag-container">
+                        <a target="_blank" href={node.frontmatter.github} className={githubButton}>Github</a>
+                        <a target="_blank" href={node.frontmatter.demo} className={demoButton}>Demo</a>
+                        <a target="_blank" href={node.frontmatter.website} className={siteButton}>Website</a>
+                    </div>
                 </div>)}
 
             </div>
