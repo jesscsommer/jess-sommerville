@@ -20,6 +20,9 @@ const Project = () => {
                         slug
                         title
                         tags
+                        demo
+                        github
+                        website
                     }
                     id
                     body
@@ -51,6 +54,11 @@ const Project = () => {
                     <div className="tag-container"> 
                         {node.frontmatter.tags.map(tag => 
                             <p id={tag} className="tag">{tag}</p>)}
+                    </div>
+                    <div className="tag-container">
+                        <a target="_blank" href={node.frontmatter.github} className="tag">Github</a>
+                        <a target="_blank" href={node.frontmatter.demo} className="tag">Demo</a>
+                        <a target="_blank" href={node.frontmatter.website} className="tag">Website</a>
                     </div>
                 </div>)}
 

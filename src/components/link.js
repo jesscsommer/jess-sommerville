@@ -37,7 +37,7 @@ const Link = () => {
         <div>
             <div className={linkContainer}>
                 {data.allLinksYaml.edges.map(edge => 
-                    <a href={edge.node.link}>
+                    <a target="_blank" href={edge.node.link}>
                         <div key={edge.node.id} className={linkItem}>
                             <GatsbyImage 
                                 className={linkIcon}

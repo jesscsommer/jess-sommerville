@@ -29,11 +29,13 @@
 
 .tag {
     padding: 4px 8px;
-    border-radius: 15px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
     font-size: 14px;
     font-weight: 600;
-    color: black;
-    background-color: white;
+    color: white;
     margin-right: 3%;
     margin-top: 0;
 }
