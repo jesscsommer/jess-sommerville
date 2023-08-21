@@ -9,3 +9,7 @@
 - name: Github 
   alt: "Github logo"
   link: "https://github.com/jesscsommer"
+
+- name: Email
+  alt: "Email icon"
+  link: "mailto:jess.c.sommerville@gmail.com"
