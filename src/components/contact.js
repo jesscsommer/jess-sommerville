@@ -8,8 +8,9 @@ import {
 const Contact = () => {
     return (
         <div>
-            <p id="contact" className="subtitle">contact me</p>
+            <p className="subtitle">contact me</p>
             <div className={contactContainer}>
+                <div id="contact" className="anchor"></div>
                 <header className="title">jess.c.sommerville@gmail.com</header>
                 <Link /> 
             </div>

@@ -22,7 +22,7 @@ const Layout = ({ pageTitle, children }) => {
         }
     `)
 
-    const links = ["story", "projects", "writings", "contact"]
+    const links = ["story", "projects", "writing", "contact"]
 
     return (
         <div>

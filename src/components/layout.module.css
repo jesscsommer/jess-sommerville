@@ -13,6 +13,7 @@
     position: fixed;
     background-color: pink;
     top: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
     z-index: 1;
@@ -22,6 +23,7 @@
     display: flex;
     list-style: none;
     padding-left: 0;
+    float: right;
 }
 
 .nav-link-item {
@@ -30,6 +32,7 @@
 
 .nav-link-text {
     color: white;
+    font-family: "Inter";
 }
 
 .site-title {

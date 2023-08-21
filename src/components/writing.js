@@ -39,9 +39,10 @@ const Writing = () => {
     
     return (
         <div>
-            <header id="writings" className="title">writings</header>
+            <header className="title">writing</header>
 
             <div className="container">
+                <div id="writing" className="anchor"></div>
                 {data.allMdx.nodes.map(node => 
                     <div className="card" key={node.id}>
                             <GatsbyImage 
