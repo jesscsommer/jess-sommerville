@@ -44,11 +44,17 @@
     opacity: 87%;
 }
 
-.cardImage {
+.card-image {
     width: 100%;
     border-radius: 5px 5px 0px 0px;
     height: 215px;
     opacity: 100%;
+}
+
+.card-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .app {

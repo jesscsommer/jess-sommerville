@@ -47,10 +47,12 @@ const Writing = () => {
                             <GatsbyImage 
                                 image={getImage(node.frontmatter.hero_image)}
                                 alt={node.frontmatter.hero_image_alt}
-                                className="cardImage"
+                                className="card-image"
                             />
-                            <p className={blogTitle}>{node.frontmatter.title}</p>
-                            <a target="_blank" href={node.frontmatter.blog_link} className={readButton}>Read</a>
+                            <div className="card-content">
+                                <p className={blogTitle}>{node.frontmatter.title}</p>
+                                <a target="_blank" href={node.frontmatter.blog_link} className={readButton}>Read</a>
+                            </div>
                 </div>)}
             </div>
 
