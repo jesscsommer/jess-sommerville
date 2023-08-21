@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import Home from '../components/home'
+import Tool from '../components/tool'
 import Story from '../components/story'
 import Project from '../components/project'
 import Seo from '../components/seo'
@@ -14,6 +15,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Home /> 
+      <Tool /> 
       <Story />
       <Project />
       <Writing />
