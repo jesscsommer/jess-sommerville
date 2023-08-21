@@ -2,7 +2,10 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import "../styles/global.css"
-import { blogTitle } from "./writing.module.css"
+import { 
+    blogTitle,
+    readButton
+} from "./writing.module.css"
 
 const Writing = () => {
     const data = useStaticQuery(graphql`
@@ -41,15 +44,13 @@ const Writing = () => {
             <div className="container">
                 {data.allMdx.nodes.map(node => 
                     <div className="card" key={node.id}>
-                        <a href={node.frontmatter.blog_link} text-decoration="none"> 
                             <GatsbyImage 
                                 image={getImage(node.frontmatter.hero_image)}
                                 alt={node.frontmatter.hero_image_alt}
                                 className="cardImage"
                             />
                             <p className={blogTitle}>{node.frontmatter.title}</p>
-                            <p>{node.excerpt}</p>
-                        </a>
+                            <a target="_blank" href={node.frontmatter.blog_link} className={readButton}>Read</a>
                 </div>)}
             </div>
 
