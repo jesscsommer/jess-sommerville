@@ -14,17 +14,18 @@ const Story = () => {
 
     return (
         <>
-            <header id="story" className="title">my story</header>
-            <div className={container}>
-                <div className={body}>
-                    <StoryText />
-                </div>
-                <div className={imageOverlay}>
-                    <StaticImage 
-                        alt="A photo of me will go here"
-                        src="../images/columbiarivergorge.JPG"
-                        className={image}
-                    />
+                <header className="title">my story</header>
+                <div className={container}>
+                    <div id="story" className="anchor"></div>
+                    <div className={body}>
+                        <StoryText />
+                    </div>
+                    <div className={imageOverlay}>
+                        <StaticImage 
+                            alt="A photo of me will go here"
+                            src="../images/columbiarivergorge.JPG"
+                            className={image}
+                        />
                 </div>
             </div>
         </>

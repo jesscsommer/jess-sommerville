@@ -10,6 +10,7 @@ const Contact = () => {
         <div>
             <p className="subtitle">contact me</p>
             <div className={contactContainer}>
+                <div id="contact" className="anchor"></div>
                 <header className="title">jess.c.sommerville@gmail.com</header>
                 <Link /> 
             </div>
