@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
-    container,
+    main,
     heading,
     navLinks,
     navLinkItem,
     navLinkText,
-    siteTitle
+    siteTitle,
+    menu
 } from './layout.module.css'
 import BurgerMenu from './menu'
 
@@ -21,20 +22,20 @@ const Layout = ({ pageTitle, children }) => {
         }
     `)
 
+    const links = ["story", "projects", "writings", "contact"]
+
     return (
-        <div className={container}>
-            {/* <nav>
+        <div>
+            <nav id={menu}>
                 <ul className={navLinks}>
-                    <li className={navLinkItem}>
-                        <Link to="/" className={navLinkText}>Home</Link>
-                    </li>
-                    <li className={navLinkItem}>
-                        <Link to="/about" className={navLinkText}>About</Link>
-                    </li>
+                    {links.map(link => 
+                        <li className={navLinkItem} key={link}>
+                            <a href={"#" + link} className={navLinkText}>{link}</a>
+                        </li>
+                    )}
                 </ul>
-            </nav> */}
-            <BurgerMenu />
-            <main>
+            </nav>
+            <main className={main}>
                 <h1 className={heading}>{pageTitle}</h1>
                 {children}
             </main>

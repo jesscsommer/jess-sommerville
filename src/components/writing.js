@@ -39,7 +39,7 @@ const Writing = () => {
     
     return (
         <div>
-            <header className="title">writings</header>
+            <header id="writings" className="title">writings</header>
 
             <div className="container">
                 {data.allMdx.nodes.map(node => 

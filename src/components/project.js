@@ -44,7 +44,7 @@ const Project = () => {
     
     return (
         <div>
-            <header className="title">projects</header>
+            <header id="projects" className="title">projects</header>
             <div className="container">
 
             {data.allMdx.nodes.map(node => 

@@ -1,4 +1,4 @@
-.container {
+.main {
     margin: auto;
     max-width: 1000px;
     font-family: "Inter";
@@ -7,6 +7,15 @@
 .heading {
     color: rebeccapurple;
     font-family: "Syne";
+}
+
+#menu {
+    position: fixed;
+    background-color: pink;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .nav-links {

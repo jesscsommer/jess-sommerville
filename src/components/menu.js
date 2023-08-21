@@ -14,14 +14,14 @@ const BurgerMenu = () => {
 
     return (
         <div>
-            <div className={bmBurgerButton}>
+            {/* <div className={bmBurgerButton}>
                 <span id={bar1} className={bmBurgerBars}></span>
                 <span id={bar2} className={bmBurgerBars}></span>
                 <span id={bar3} className={bmBurgerBars}></span>
             </div>
             <Menu right className={bmBurgerButton}>
                 <a id="story" target="_self" href="#story">my story</a>
-            </Menu>
+            </Menu> */}
         </div>
     )
 }
