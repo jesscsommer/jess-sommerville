@@ -8,6 +8,7 @@ import {
     navLinkText,
     siteTitle
 } from './layout.module.css'
+import BurgerMenu from './menu'
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
@@ -32,6 +33,7 @@ const Layout = ({ pageTitle, children }) => {
                     </li>
                 </ul>
             </nav> */}
+            <BurgerMenu />
             <main>
                 <h1 className={heading}>{pageTitle}</h1>
                 {children}
