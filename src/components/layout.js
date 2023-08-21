@@ -7,7 +7,8 @@ import {
     navLinkItem,
     navLinkText,
     siteTitle,
-    menu
+    menu,
+    menuBkg
 } from './layout.module.css'
 import BurgerMenu from './menu'
 
@@ -22,19 +23,21 @@ const Layout = ({ pageTitle, children }) => {
         }
     `)
 
-    const links = ["story", "projects", "writing", "contact"]
+    const links = ["home", "story", "projects", "writing", "contact"]
 
     return (
         <div>
-            <nav id={menu}>
-                <ul className={navLinks}>
-                    {links.map(link => 
-                        <li className={navLinkItem} key={link}>
-                            <a href={"#" + link} className={navLinkText}>{link}</a>
-                        </li>
-                    )}
-                </ul>
-            </nav>
+            <div id={menuBkg}>
+                <nav id={menu}>
+                    <ul className={navLinks}>
+                        {links.map(link => 
+                            <li className={navLinkItem} key={link}>
+                                <a href={link === "home" ? "#": "#" + link} className={navLinkText}>{link}</a>
+                            </li>
+                        )}
+                    </ul>
+                </nav>
+            </div>
             <main className={main}>
                 <h1 className={heading}>{pageTitle}</h1>
                 {children}

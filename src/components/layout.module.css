@@ -11,12 +11,23 @@
 
 #menu {
     position: fixed;
-    background-color: pink;
+    background-color: rgba(255, 255, 255, 0.07);
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#menu-bkg {
+    background-color: #121212;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     z-index: 1;
+    height: 50px;
 }
 
 .nav-links {
@@ -24,6 +35,7 @@
     list-style: none;
     padding-left: 0;
     float: right;
+    margin-right: 5%;
 }
 
 .nav-link-item {
@@ -32,7 +44,11 @@
 
 .nav-link-text {
     color: white;
-    font-family: "Inter";
+    font-family: "Syne";
+}
+
+.nav-link-text:hover {
+    color: #9c27b0;
 }
 
 .site-title {
