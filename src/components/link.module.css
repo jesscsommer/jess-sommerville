@@ -1,6 +1,7 @@
 .link-container {
     margin: 0 auto;
     display: flex;
+    opacity: 60%;
 }
 
 

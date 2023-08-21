@@ -5,7 +5,8 @@ import "../styles/global.css"
 import { 
     githubButton,
     demoButton,
-    siteButton
+    siteButton,
+    description
 } from "./project.module.css"
 
 
@@ -55,7 +56,7 @@ const Project = () => {
                         className="card-image"
                     />
                     <div className="card-content">
-                        <p>{node.body}</p>
+                        <p className={description}>{node.body}</p>
                         <div className="tag-container"> 
                             {node.frontmatter.tags.map(tag => 
                                 <p id={tag} className="tag">{tag}</p>)}

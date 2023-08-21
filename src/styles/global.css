@@ -27,7 +27,6 @@
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    opacity: 87%;
 }
 
 .tag {
@@ -78,4 +77,5 @@ body p {
     margin: auto;
     display: block;
     text-align: left;
+    opacity: 60%;
 }

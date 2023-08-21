@@ -32,3 +32,6 @@
     color: white;
 }
 
+.body p {
+    opacity: 60%;
+}
