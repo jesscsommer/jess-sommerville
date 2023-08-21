@@ -19,7 +19,7 @@
     color: white;
     margin-top: 5%;
     text-align: center;
-    opacity: 87%;
+    opacity: 60%;
 }
 
 .my-name {
@@ -30,7 +30,7 @@
     margin: auto;
     display: block;
     text-align: left;
-    opacity: 87%;
+    opacity: 60%;
 }
 
 .nav-link {
@@ -41,5 +41,5 @@
     display: block;
     text-align: center; 
     font-size: 1.25rem;
-    opacity: 87%;
+    opacity: 60%;
 }
