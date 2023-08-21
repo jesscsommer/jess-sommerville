@@ -4,7 +4,8 @@ import {
     title,
     body,
     image, 
-    container 
+    container,
+    imageOverlay
 } from "./story.module.css"
 import "../styles/global.css"
 import { StaticImage } from "gatsby-plugin-image";
@@ -18,11 +19,13 @@ const Story = () => {
                 <div className={body}>
                     <StoryText />
                 </div>
-                <StaticImage 
-                    alt="A photo of me will go here"
-                    src="../images/columbiarivergorge.JPG"
-                    className={image}
-                />
+                <div className={imageOverlay}>
+                    <StaticImage 
+                        alt="A photo of me will go here"
+                        src="../images/columbiarivergorge.JPG"
+                        className={image}
+                    />
+                </div>
             </div>
         </>
     )

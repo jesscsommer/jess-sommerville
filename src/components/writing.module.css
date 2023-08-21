@@ -4,9 +4,21 @@
     color: white;
     display: block;
     font-size: 1.25rem;
+    opacity: 87%;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.read-button {
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #9c27b0;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-right: 3%;
+    margin-top: 0;
 }

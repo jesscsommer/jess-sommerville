@@ -3,22 +3,24 @@
     font-weight: 600;
     font-size: 2.5rem;
     color: white;
+    opacity: 87%;
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-bottom: 10vh;
     display: flex;
     flex-wrap: wrap;
 }
 
 .card {
-    padding: 8px;
     border-radius: 5px;
-    max-width: 30%;
-    margin-right: 5%;
+    width: 300px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .tag-container {
@@ -38,13 +40,20 @@
     color: white;
     margin-right: 3%;
     margin-top: 0;
+    opacity: 87%;
 }
 
-.cardImage {
+.card-image {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     height: 215px;
-    object-fit: cover;
+    opacity: 100%;
+}
+
+.card-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .app {
@@ -52,8 +61,12 @@
 }
 
 body {
-    background-color: black;
+    background-color: #121212;
     color: white;
+}
+
+body p {
+    opacity: 87%;
 }
 
 .subtitle {
@@ -64,4 +77,5 @@ body {
     margin: auto;
     display: block;
     text-align: left;
+    opacity: 60%;
 }

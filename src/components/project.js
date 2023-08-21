@@ -5,7 +5,8 @@ import "../styles/global.css"
 import { 
     githubButton,
     demoButton,
-    siteButton
+    siteButton,
+    description
 } from "./project.module.css"
 
 
@@ -52,17 +53,19 @@ const Project = () => {
                     <GatsbyImage 
                         image={getImage(node.frontmatter.hero_image)}
                         alt={node.frontmatter.hero_image_alt}
-                        className="cardImage"
+                        className="card-image"
                     />
-                    <p>{node.body}</p>
-                    <div className="tag-container"> 
-                        {node.frontmatter.tags.map(tag => 
-                            <p id={tag} className="tag">{tag}</p>)}
-                    </div>
-                    <div className="tag-container">
-                        <a target="_blank" href={node.frontmatter.github} className={githubButton}>Github</a>
-                        <a target="_blank" href={node.frontmatter.demo} className={demoButton}>Demo</a>
-                        <a target="_blank" href={node.frontmatter.website} className={siteButton}>Website</a>
+                    <div className="card-content">
+                        <p className={description}>{node.body}</p>
+                        <div className="tag-container"> 
+                            {node.frontmatter.tags.map(tag => 
+                                <p id={tag} className="tag">{tag}</p>)}
+                        </div>
+                        <div className="tag-container">
+                            <a target="_blank" href={node.frontmatter.github} className={githubButton}>Github</a>
+                            <a target="_blank" href={node.frontmatter.demo} className={demoButton}>Demo</a>
+                            <a target="_blank" href={node.frontmatter.website} className={siteButton}>Website</a>
+                        </div>
                     </div>
                 </div>)}
 
