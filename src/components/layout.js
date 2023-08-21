@@ -10,7 +10,7 @@ import {
     menu,
     menuBkg
 } from './layout.module.css'
-import BurgerMenu from './menu'
+
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`

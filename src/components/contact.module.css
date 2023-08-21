@@ -3,5 +3,31 @@
     margin-bottom: 5vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
     position: relative;
+}
+
+.contact-text {
+    opacity: 60%;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.link-container {
+    display: flex;
+    opacity: 60%;
+    width: 25%;
+}
+
+
+.link-item {
+    max-width: 30px;
+    margin: 10px;
+}
+
+.link-icon {
+    width: 100%;
+    object-fit: contain;
 }

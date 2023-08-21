@@ -19,6 +19,7 @@
     "gatsby": "^5.11.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-mdx": "^5.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
     "gatsby-remark-line-breaks": "^1.0.0",
@@ -26,9 +27,13 @@
     "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
     "gatsby-transformer-yaml": "^5.11.0",
+    "process-top": "^1.2.0",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
+  }, 
+  "resolutions": {
+    "gatsby-plugin-sharp/probe-image-size": "^7.0.0"
   }
 }
