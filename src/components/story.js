@@ -1,7 +1,6 @@
 import * as React from "react";
 import StoryText from "../../stories/index.mdx"
 import { 
-    title,
     body,
     image, 
     container,

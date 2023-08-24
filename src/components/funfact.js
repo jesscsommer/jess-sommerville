@@ -2,7 +2,6 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import "../styles/global.css";
 import { 
-    body,
     allFacts,
     factPair,
     factQ,

@@ -1,7 +1,6 @@
 import * as React from "react";
 import "../styles/global.css";
 import { 
-    body,
     allFacts,
     factPair,
     factQ,

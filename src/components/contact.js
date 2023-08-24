@@ -42,7 +42,7 @@ const Contact = () => {
             <p className={contactText}>get in touch</p>
             <div className={linkContainer}>
             {data.allLinksYaml.edges.map(edge => 
-                <a target="_blank" href={edge.node.link}>
+                <a target="_blank" rel="noreferrer" href={edge.node.link}>
                     <div key={edge.node.id} className={linkItem}>
                         <GatsbyImage 
                             className={linkIcon}

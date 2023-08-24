@@ -52,7 +52,7 @@ const Writing = () => {
                             />
                             <div className="card-content">
                                 <p className={blogTitle}>{node.frontmatter.title}</p>
-                                <a target="_blank" href={node.frontmatter.blog_link} className={readButton}>Read</a>
+                                <a target="_blank" rel="noreferrer" href={node.frontmatter.blog_link} className={readButton}>Read</a>
                             </div>
                 </div>)}
             </div>
