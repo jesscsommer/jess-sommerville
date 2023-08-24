@@ -62,9 +62,9 @@ const Project = () => {
                                     <p id={tag} className="tag">{tag}</p>)}
                             </div>
                             <div className="tag-container">
-                                <a target="_blank" href={node.frontmatter.github} className={githubButton}>Github</a>
-                                <a target="_blank" href={node.frontmatter.demo} className={demoButton}>Demo</a>
-                                <a target="_blank" href={node.frontmatter.website} className={siteButton}>Website</a>
+                                <a target="_blank" rel="noreferrer" href={node.frontmatter.github} className={githubButton}>Github</a>
+                                <a target="_blank" rel="noreferrer" href={node.frontmatter.demo} className={demoButton}>Demo</a>
+                                <a target="_blank" rel="noreferrer" href={node.frontmatter.website} className={siteButton}>Website</a>
                             </div>
                         </div>
                     </div>)}
