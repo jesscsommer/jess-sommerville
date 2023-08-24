@@ -11,8 +11,8 @@
     display: flex;
     flex-direction: row;
     border-radius: 12px;
-    margin-right: 2%;
-    min-width: 25%;
+    /* margin-right: 2%; */
+    /* min-width: 25%; */
 }
 
 .fact-q {
