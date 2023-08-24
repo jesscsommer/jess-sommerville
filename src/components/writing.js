@@ -45,11 +45,11 @@ const Writing = () => {
                 <div id="writing" className="anchor"></div>
                 {data.allMdx.nodes.map(node => 
                     <div className="card" key={node.id}>
-                            {/* <GatsbyImage 
+                            <GatsbyImage 
                                 image={getImage(node.frontmatter.hero_image)}
                                 alt={node.frontmatter.hero_image_alt}
                                 className="card-image"
-                            /> */}
+                            />
                             <div className="card-content">
                                 <p className={blogTitle}>{node.frontmatter.title}</p>
                                 <a target="_blank" rel="noreferrer" href={node.frontmatter.blog_link} className={readButton}>Read</a>

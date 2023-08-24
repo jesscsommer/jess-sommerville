@@ -43,11 +43,11 @@ const Contact = () => {
             <div className={linkContainer}>
             {data.allLinksYaml.edges.map(edge => 
                 <a target="_blank" rel="noreferrer" href={edge.node.link}>
-                    {/* <div key={edge.node.id} className={linkItem}>
+                    <div key={edge.node.id} className={linkItem}>
                         <GatsbyImage 
                             className={linkIcon}
                             image={getImage(data.allFile.edges.filter(file => file.node.name === edge.node.name)[0].node.childImageSharp)} alt={edge.node.alt} />
-                    </div> */}
+                    </div>
                 </a>
             )}
             </div>

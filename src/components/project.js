@@ -50,11 +50,11 @@ const Project = () => {
                 {data.allMdx.nodes.map(node => 
                     <div className="card" key={node.id}>
                         {/* <p>{node.frontmatter.title}</p> */}
-                        {/* <GatsbyImage 
+                        <GatsbyImage 
                             image={getImage(node.frontmatter.hero_image)}
                             alt={node.frontmatter.hero_image_alt}
                             className="card-image"
-                        /> */}
+                        />
                         <div className="card-content">
                             <p className={description}>{node.body}</p>
                             <div className="tag-container"> 
