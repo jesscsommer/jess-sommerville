@@ -8,18 +8,20 @@ import {
     factA
 } from "./tool.module.css"
 
-const TOOLS = ["JavaScript", "React", "Python", "Flask"]
+const SKILLS = ["JavaScript", "React", "HTML", "CSS", "Python", "Flask", 
+                "RESTful APIs", "Object Oriented Programming", "SQL", 
+                "PostgreSQL", "SQLAlchemy", "Looker", "Git"]
 
 const Tool = () => {
     return (
         <div>
-            <header className="title">tools</header>
+            <header className="title">skills</header>
             <div className={allFacts}>
-                {TOOLS.map(TOOL => 
-                    <div className={factPair} key={TOOL}>
-                        <p className={factQ}>{TOOL}</p>
-                        <p className={factQ}>•</p>
-                        <p className={factA}>{TOOL}</p>
+                {SKILLS.map(SKILL => 
+                    <div className={factPair} key={SKILL}>
+                        {/* <p className={factQ}>{SKILL}</p> */}
+                        <p className={factA}>{SKILL}</p>
+                        {SKILLS[SKILLS.length-1] === SKILL ? null : <p className={factA}>•</p>}
                     </div>
                 )}
             </div>
