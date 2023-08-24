@@ -22,7 +22,7 @@ const Story = () => {
                     </div>
                     <div className={imageOverlay}>
                         <StaticImage 
-                            alt="A photo of me will go here"
+                            alt="Jess sitting on a ledge in front of the Columbia River Gorge"
                             src="../images/columbiarivergorge.JPG"
                             className={image}
                         />
