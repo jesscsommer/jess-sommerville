@@ -10,9 +10,8 @@
 .fact-pair {
     display: flex;
     flex-direction: row;
-    border-radius: 12px;
-    /* margin-right: 2%; */
-    /* min-width: 25%; */
+    margin-right: 2%;
+    min-width: 25%; 
 }
 
 .fact-q {
@@ -25,4 +24,10 @@
     color: white;
     font-style: italic;
     opacity: 60%;
+}
+
+@media screen and (max-width: 600px) {
+    div {
+        width: 100%;
+    }
 }

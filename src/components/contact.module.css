@@ -18,7 +18,7 @@
 .link-container {
     display: flex;
     opacity: 60%;
-    width: 25%;
+    max-width: 25%;
 }
 
 
@@ -30,4 +30,14 @@
 .link-icon {
     width: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+    .link-container {
+        max-width: 50%;
+    }
+    .link-item {
+        max-width: 25px;
+        margin-right: 5%;
+    }
 }

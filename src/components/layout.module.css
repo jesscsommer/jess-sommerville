@@ -1,7 +1,17 @@
 .main {
     margin: auto;
-    max-width: 1000px;
+    max-width: 100%;
     font-family: "Inter";
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-basis: 100%; */
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 #menu {
@@ -34,7 +44,7 @@
 }
 
 .nav-link-item {
-    padding-right: 2rem;
+    padding-right: 0.75em;
 }
 
 .nav-link-text {
@@ -54,4 +64,5 @@
     font-weight: 700;
     margin: 3rem 0;
 }
+
 
