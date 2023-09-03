@@ -36,3 +36,24 @@
 .body p {
     opacity: 60%;
 }
+
+@media screen and (max-width: 600px) {
+    .image {
+        margin: auto;
+    }
+
+    .image-overlay {
+        width: 90%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+
+    .body {
+        max-width: 90%;
+        margin-top: 1vh;
+    }
+    
+    .container {
+        width: 100%;
+    }
+}
