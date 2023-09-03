@@ -13,7 +13,7 @@ const Tool = () => {
             <header className="title">skills</header>
             <div className={allFacts}>
                 <p className={factA}>
-                    JavaScript  •  React  •  HTML  •  CSS  •  Python  •  Flask  •  RESTful APIs  •  SQL  •  Object Oriented Programming  •  PostgreSQL  •  SQLAlchemy  •  Looker  •  Git
+                    JavaScript  •  React  •  HTML  •  CSS  •  Python  •  Flask  •  RESTful APIs  •  SQL  •  Object Oriented Programming  •  PostgreSQL  •  SQLAlchemy  •  Git
                 </p>
             </div>
         </div>
