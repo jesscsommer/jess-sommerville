@@ -17,16 +17,14 @@
 }
 
 @media screen and (max-width: 600px) {
-    div {
-        margin: auto;
-        width: 95%;
-    }
     .container {
         width: 100%;
+        justify-content: center;
     }
     .card {
         margin-top: 2vh;
         margin-bottom: 2vh;
+        margin-right: 0px;
         width: 100%;
     }
 }

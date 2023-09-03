@@ -51,6 +51,7 @@
     .body {
         max-width: 90%;
         margin-top: 1vh;
+        margin: auto;
     }
     
     .container {
