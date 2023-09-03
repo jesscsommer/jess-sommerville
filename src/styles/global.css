@@ -16,6 +16,21 @@
     position: relative;
 }
 
+@media screen and (max-width: 600px) {
+    div {
+        margin: auto;
+        width: 95%;
+    }
+    .container {
+        width: 100%;
+    }
+    .card {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 100%;
+    }
+}
+
 .card {
     border-radius: 5px;
     width: 300px;
@@ -87,3 +102,4 @@ body p {
     top: -150px;
     left: 0px;
 }
+

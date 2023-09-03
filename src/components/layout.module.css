@@ -12,6 +12,7 @@
     width: 100%;
     overflow: hidden;
     z-index: 2;
+    flex-basis: 100%;
 }
 
 #menu-bkg {
@@ -54,4 +55,5 @@
     font-weight: 700;
     margin: 3rem 0;
 }
+
 

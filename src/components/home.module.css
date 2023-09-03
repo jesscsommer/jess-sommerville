@@ -4,6 +4,14 @@
     display: inline-block;
 }
 
+/* @media screen and (max-width:600px) {
+    .container {
+        width: 75%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+} */
+
 .main-text {
     font-family: "Syne";
     font-weight: 700;
@@ -17,7 +25,6 @@
     font-weight: 400;
     font-size: 1.25rem;
     color: white;
-    /* margin-top: 5%; */
     margin: 0;
     text-align: center;
     opacity: 60%;
