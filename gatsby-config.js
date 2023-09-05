@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jess Sommerville`,
-    siteUrl: `https://www.jess-sommerville.com`,
+    siteUrl: `https://www.yourdomain.ltd`,
   },
   plugins: [
     "gatsby-plugin-image",
