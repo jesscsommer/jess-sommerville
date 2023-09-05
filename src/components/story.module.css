@@ -19,6 +19,7 @@
     border-radius: 5px;
     object-fit: cover; 
     opacity: 85%;
+    max-width: 375px;
 }
 
 .image-overlay {
@@ -40,11 +41,7 @@
 @media screen and (max-width: 600px) {
     .image {
         margin: auto;
-    }
-
-    .image-overlay {
         width: 90%;
-        margin: auto;
         margin-top: 5vh;
     }
 

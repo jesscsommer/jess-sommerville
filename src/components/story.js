@@ -12,22 +12,20 @@ import { StaticImage } from "gatsby-plugin-image";
 const Story = () => {
 
     return (
-        <>
+        <div>
                 <header className="title">my story</header>
                 <div className={container}>
                     <div id="story" className="anchor"></div>
                     <div className={body}>
                         <StoryText />
                     </div>
-                    <div className={imageOverlay}>
-                        <StaticImage 
-                            alt="Jess sitting on a ledge in front of the Columbia River Gorge"
-                            src="../images/columbiarivergorge.JPG"
-                            className={image}
-                        />
-                </div>
+                    <StaticImage 
+                        alt="Jess sitting on a ledge in front of the Columbia River Gorge"
+                        src="../images/columbiarivergorge.JPG"
+                        className={image}
+                    />
             </div>
-        </>
+        </div>
     )
 }
 
