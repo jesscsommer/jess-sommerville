@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.ltd`,
   },
   plugins: [
+    "gatsby-plugin-netlify",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
