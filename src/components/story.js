@@ -19,11 +19,11 @@ const Story = () => {
                     <div className={body}>
                         <StoryText />
                     </div>
-                    {/* <StaticImage 
+                    <StaticImage 
                         alt="Jess sitting on a ledge in front of the Columbia River Gorge"
                         src="../images/columbiarivergorge.JPG"
                         className={image}
-                    /> */}
+                    />
             </div>
         </div>
     )
