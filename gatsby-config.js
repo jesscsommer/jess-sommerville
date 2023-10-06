@@ -4,9 +4,10 @@
 module.exports = {
   siteMetadata: {
     title: `Jess Sommerville`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://jess-sommerville.com`,
   },
   plugins: [
+    "gatsby-plugin-netlify",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {

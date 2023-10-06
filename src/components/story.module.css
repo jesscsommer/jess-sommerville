@@ -19,6 +19,7 @@
     border-radius: 5px;
     object-fit: cover; 
     opacity: 85%;
+    max-width: 375px;
 }
 
 .image-overlay {
@@ -35,4 +36,22 @@
 
 .body p {
     opacity: 60%;
+}
+
+@media screen and (max-width: 600px) {
+    .image {
+        margin: auto;
+        width: 90%;
+        margin-top: 5vh;
+    }
+
+    .body {
+        max-width: 90%;
+        margin-top: 1vh;
+        margin: auto;
+    }
+    
+    .container {
+        width: 100%;
+    }
 }

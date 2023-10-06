@@ -10,16 +10,7 @@ import {
 } from './layout.module.css'
 
 
-const Layout = ({ pageTitle, children }) => {
-    // const data = useStaticQuery(graphql`
-    //     query {
-    //         site {
-    //             siteMetadata {
-    //                 title
-    //             }
-    //         }
-    //     }
-    // `)
+const Layout = ({ children }) => {
 
     const links = ["home", "story", "projects", "writing", "contact"]
 
@@ -37,7 +28,6 @@ const Layout = ({ pageTitle, children }) => {
                 </nav>
             </div>
             <main className={main}>
-                <h1>{pageTitle}</h1>
                 {children}
             </main>
         </div>
