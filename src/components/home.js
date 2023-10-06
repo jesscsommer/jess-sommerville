@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className={container}>
             <p className={myName}>Hi, I'm Jess Sommerville</p>
-            <header className={mainText}>full-stack developer</header>
+            <header className={mainText}>software developer</header>
             <header className={mainText}>& forever tinkerer</header>
             <p className={detailText}>Here is some text about me.</p>
             <a href="#story" className={navLink}>Read about me</a>
