@@ -64,7 +64,6 @@ const Project = () => {
                             <div className="tag-container">
                                 <a target="_blank" rel="noreferrer" href={node.frontmatter.github} className={githubButton}>Github</a>
                                 <a target="_blank" rel="noreferrer" href={node.frontmatter.demo} className={demoButton}>Demo</a>
-                                {node.frontmatter.website ? <a target="_blank" rel="noreferrer" href={node.frontmatter.website} className={siteButton}>Website</a> : null}
                             </div>
                         </div>
                     </div>)}
